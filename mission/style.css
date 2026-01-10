@@ -1,0 +1,44 @@
+#content{
+max-width: 60%;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+
+h1{
+    font-size: 1.5cm;
+    text-align: center;
+}
+
+p{
+    color:dodgerblue;
+    font-style: initial;
+    font-size: 0.6cm;
+    text-align: center;
+    letter-spacing: 5px;
+}
+h2{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    font-size: 0.5cm;
+    font-weight: lighter;
+}
+h3{
+    font-style: italic;
+    padding-left: 80px;
+    font-weight: lighter;
+}
+.list{
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 0.5cm;
+    font-weight: lighter;
+}
+
+ol li{
+    margin-bottom: 30px;
+}
+#logo{
+    width: 200px;
+    padding-left:300px;
+}
