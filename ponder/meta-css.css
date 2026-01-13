@@ -13,27 +13,34 @@ body{
 }
 p{
     color: #035f9c;
-    font-size: 1.3cm;
+    font-size: 0.7cm;
 }
 hr{
     height: 3px;
     background-color: #035f9c;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 h1, h2, p{
     text-align: center; 
 }
+h2{
+    font-weight: 8000;
+}
 img{
-    width: 50%;
+    width: 30%;
     display: block;
     margin: 50px auto;
 }
 #topics{
-    line-height: 1.5cm;
+    line-height: 1cm;
     margin: 0 auto;
     width: 55%;
 }
 .list{
     list-style-type: none;
+    margin-bottom: 2px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: left;
 }
