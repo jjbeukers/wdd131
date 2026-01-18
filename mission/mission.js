@@ -1,23 +1,19 @@
-let selectElem = document.querySelector('#theme-select');
-let pageContent = document.querySelector('body');
+/* eslint-env browser */
+const modeSelect = document.querySelector(".container");
+const body = document.body;
 
-//Event listener that changes the background and font.//
-selectElem.addEventListener('change', changeTheme);
+const lightLogo = document.getElementById("logo");
+const darkLogo = document.getElementById("dark-logo");
 
-function changeTheme() {
-    let current = selectElem.value;
-    if (current === 'ocean') {
-        document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/ocean.jpg')";
-        pageContent.style.fontFamily = "Papyrus, fantasy";
-    } else if (current === 'forest') {
-        document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/forest.jpg')";
-        pageContent.style.fontFamily = "Impact, sans-serif";
-    } else if (current === 'desert') {
-        document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/desert.jpg')";
-        pageContent.style.fontFamily = "'Big Caslon', serif";
-    } else {
-        // default
-        document.body.style.backgroundImage = "none";
-        pageContent.style.fontFamily = "Georgia, serif";
+modeSelect.addEventListener("change", () => {
+    if (modeSelect.value === "dark") {
+        body.classList.add("dark-mode");
+        lightLogo.style.display = "none";
+        darkLogo.style.display = "block";
+    } 
+    else if (modeSelect.value === "light") {
+        body.classList.remove("dark-mode");
+        lightLogo.style.display = "block";
+        darkLogo.style.display = "none";
     }
-}
+});             

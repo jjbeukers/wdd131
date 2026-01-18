@@ -47,3 +47,14 @@ ol li{
     margin-left: auto;
     margin-right: auto;
 }
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+#dark-logo{
+     width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
