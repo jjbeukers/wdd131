@@ -13,7 +13,7 @@ function openModal(e) {
     const img=e.target;
     const src = img.getAttribute('src');
     const alt = img.getAttribute('alt');
-    const full = src.replace('sm', 'full');
+    const full = src.replace('-sm', '-full');
 
     modalImage.src = full;
     modalImage.alt = alt;
@@ -32,3 +32,13 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
+
+const btn = document.querySelector('.menu-btn');
+const menu = document.querySelector('nav');
+
+btn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    menu.classList.toggle('hide');
+    btn.classList.toggle('change');
+}

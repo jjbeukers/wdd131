@@ -33,18 +33,28 @@ h2{
 }
 
 /* Navigation */
+nav{
+    text-align:center; 
+    padding: 10px;
+}
+
 nav a {
-    padding: 20px;
-    display: none;
+    display: block;
+    padding: 10px;
     color: white;
+    text-decoration: underline;
 }
 
 nav a:hover {
     color: #616061;
 }
 
+.hide {
+    display: none;
+}
+
 .menu-btn {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     cursor: pointer;
     border: none;
@@ -71,6 +81,7 @@ nav a:hover {
 }
 
 dialog img {
+    height: 40%;
     width: 90%;
     display: block;
     margin: 20vh auto;
@@ -81,10 +92,9 @@ dialog {
     background-color: rgba(0,0,0,.75);
 }
 .close-viewer {
-    /* position: absolut - don't want this in the actual flow of the html. I want it to be right where I tell it to be */
     position: absolute;
-    top: 10vh;
-    right: 2vh;
+    top: 19vh;
+    right: 1vh;
     padding: 3px 6px;
     font-size: 1.5em;
 }
@@ -100,26 +110,52 @@ dialog {
         margin: 0 auto;
     }
 
-    nav a {
-        display: none;
-        color: white;
     }
-}
+    dialog img {
+    width: 85%;
+    height: 50%;
+    display: block;
+    margin: 20vh auto;
+    }
+    .close-viewer {
+    /* position: absolut - don't want this in the actual flow of the html. I want it to be right where I tell it to be */
+    position: absolute;
+    top: 18vh;
+    right: 5vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    }
 
 /* Desktop view */
 @media screen and (min-width: 1000px) {
     .image-grid {
         grid-template-columns: 1fr 1fr 1fr;
         width: 60%;
-        margin: 0 auto;
+        margin: 20vh auto;
     }
-    .menu-btn{
-        display: none;
+
+    nav{
+        display: block;
     }
 
     nav a{
         display: inline;
-        color: white;
         margin-left: 20px;
+    }
+     .menu-btn{
+        display: none;
+    }
+    dialog img {
+    height: 60%;
+    width: 55%;
+    display: block;
+    margin: 20vh auto;
+    }
+    .close-viewer {
+    position: absolute;
+    top: 18vh;
+    right: 52vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
     }
 }
