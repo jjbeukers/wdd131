@@ -10,30 +10,39 @@ header, footer {
     color: black;
     padding: 1rem;
     text-align: center;
-    border-top: yellow;
-    border-width: 4px;
+    
+}
+header{
+    padding-bottom: 25px;  
+}
+footer{
+    border-top: 3px solid peachpuff;
 }
 .main-nav {
+    border-top: 3px solid peachpuff;
+    border-bottom: 3px solid peachpuff;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .main-nav li {
     padding: 8px;
-    text-align: right;
 }
 .main-nav a {
     color: #b30059;
     text-decoration: none;
+
 }
 #book-list {
     padding: 0 2rem;
 }
 .book {
-    border: 2px solid #ccc;
-    padding: 1rem;
-    border-radius: 10px;
     max-width: 700px;
     margin: 20px auto;
+    text-align: center; 
 }
 .book h2 {
     color: #b30059;
@@ -44,30 +53,60 @@ header, footer {
 .book p {
     padding-left: 20px;
 }
+.book-meta {
+    text-align: right;
+    margin-bottom: 1rem;
+    padding-top: 5px;
+}
+strong.release-date{
+    font-style: italic;
+}
+
+.book-meta p {
+    margin: 0.25rem 0;
+}
 .book img {
     max-width: 100%;
-    display: block;
+    display: inline;
+    
     border-radius: 8px;
     margin: 0 auto;
 }
-#desc {
-    grid-column: 1/3;
+#desc{
+    text-align: left;
 }
+@media (max-width: 600px){
+    .book-meta{
+        border-top: 3px solid peachpuff;
+    }
+}
+@media (min-width: 1000px) {
+    .book {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    .book img{
+        grid-column: 2;
+    }
+    #desc{
+        grid-column: 2;
+    }
 
-@media (min-width: 600px) {
-    .main-nav{
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        justify-content: center;
+    .book-meta {
+        grid-column: 1;
+        font-size: 0.9rem;
+        padding-right: 10px;
+        border-right: 3px solid peachpuff;
     }
-    .movie{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
+
+    .content h2 {
+        text-align: left;
     }
-    .movie img{
-        grid-row: 1/6;
-        grid-template-columns: 1/2;
+
+    .content img {
+        max-width: 200px;
+        margin: 1rem 0;
     }
-}
-          
+}          
