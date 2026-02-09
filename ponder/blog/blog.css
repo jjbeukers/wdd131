@@ -68,7 +68,7 @@ footer{
 .book-meta p {
     margin: 0.25rem 0;
 }
-.book-meta .italic {
+.italic {
     font-style: italic;
 }
 .book img {
@@ -112,8 +112,11 @@ footer{
     .book-meta {
         grid-column: 1;
         font-size: 0.9rem;
-        padding-right: 10px;
-        border-right: 3px solid peachpuff;
+        padding-right: 25px;
+    }
+    .right-column{
+        border-left: 3px solid peachpuff;
+        padding-left: 25px;
     }
 
     .content h2 {
