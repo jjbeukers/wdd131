@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="credit_card2.css"/>
+    <script src="credit_card.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <form id="checkoutForm" action="completed.html" method="get">
+        <div id="cardFront">
+            <label for="total">TOTAL: $199</label>
+            <label id="card_img">💳</label>
+            <label for="cardNumber">CARD NUMBER</label>
+            <input
+                type="text"
+                id="cardNumber"
+                name="cardNumber"
+                pattern="[0-9 ]{19}"
+                placeholder="1234 5678 9101 1020"
+                required
+                />
+            <label for="fullName">CARD HOLDER</label>
+            <input  
+                type="text"
+                id="name"
+                name="name"
+                pattern="[A-Za-z ]+"
+                placeholder="John Doe"
+                required
+                />
+            <label for="expiration">EXPIRATION</label>
+            <div id="expGroup">
+                <input 
+                    type="text" 
+                    id="month" 
+                    name="expMonth" 
+                    placeholder="MM" 
+                    aria-labelledby="expirationDate">
+                <input 
+                    type="text" 
+                    id="year" 
+                    name="expYear" 
+                    placeholder="YY" 
+                    aria-labelledby="expirationDate">
+            </div>
+        </div>
+        <div id="cardBack">
+            <div id="stripe"> hr </div>
+            <label for="cvv"> CVC/CVV </label>
+            <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="XXX">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
+          
