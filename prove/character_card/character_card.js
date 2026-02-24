@@ -13,7 +13,7 @@ const aCharacter = {
             this.stats[0].health -=0;
         }
         else{
-            alert("Character is Dead")
+            alert("Character Died")
         }
         renderStats(this.stats);
     },
