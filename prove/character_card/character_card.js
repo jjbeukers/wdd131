@@ -13,7 +13,7 @@ const aCharacter = {
             this.stats[0].health -=0;
         }
         else{
-            alert("Character Died")
+            alert("Character Died");
         }
         renderStats(this.stats);
     },
@@ -49,9 +49,9 @@ function renderStats(stats){
 renderStats(aCharacter.stats);
 
 document.querySelector("#attacked").addEventListener("click", function () {
-    aCharacter.attacked()
+    aCharacter.attacked();
 });
 
 document.querySelector("#level_up").addEventListener("click", function (){
-    aCharacter.levelUp()
+    aCharacter.levelUp();
 });
