@@ -93,10 +93,9 @@ hr{
     left: 8px;
     background: gainsboro;
     border: 1px solid #999;
-    border-radius: 5px;
-    font-size: 20px;
+    font-size: 30px;
     padding: 3px 6px;
-    max-width: 75px;
+    max-width: 55px;
 }
 
 /* RECIPE TEXT */
@@ -189,11 +188,9 @@ footer a:hover {
     .tag{
         background-color: #ddd;
         padding: 4px 8px;
-
         border: 1px solid #666;
-        border-radius: 4px;
-
         font-size: 14px;
+        font-weight: bold;
     }
 
     /* RIGHT SIDE INFO COLUMN */
