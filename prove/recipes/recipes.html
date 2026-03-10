@@ -9,6 +9,7 @@
     <link rel="icon" href="images/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link href="recipes.css" rel="stylesheet">
+    <script defer src="recipes.js"></script>
 
     
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -40,39 +41,17 @@
 
     <main>
             <div class = "search_bar">
-                <input type = "text" placeholder = "Find a recipe">
-                <button>
+                <input id = "search" type = "text" placeholder = "Find a recipe">
+                <button class="search_btn">
                     <img src="images/search.svg" alt="Search">
                 </button>
             </div>
 
             <hr> <!--gray line between the search bar and recipe card -->
 
-            <section class="recipe_card">
-                <div class="recipe_image">
-                    <img src="images/apple-crisp.jpg" alt="Apple Crisp Dessert">
-                </div>
-
-                <div class="recipe_info">
-                    <span class="tag">dessert</span>
-                    <h2>Apple Crisp</h2>
-
-                    <span
-                        class="rating"
-                        role="img"
-                        aria-label="Rating: 4 out of 5 stars"
-                    >
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                    <p class="large_screen"> This apple crisp recipe is a simple yet delicious fall
-                            dessert that's great served warm with vanilla ice cream.
-                    </p>
-                </div>
-            </section>
+            <div class="recipe_container">
+                
+            </div>
     </main>
     
     <footer class="footer">
