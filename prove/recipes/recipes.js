@@ -364,7 +364,7 @@ function recipesTemplate(recipe) {
             </div>
             <h2>${recipe.name}</h2>
             
-            <p>${recipe.description}</p>
+            <p class="large_screen">${recipe.description}</p>
             <p>${ratingTemplate(recipe.rating)}</p>
         </div>
     </div>
