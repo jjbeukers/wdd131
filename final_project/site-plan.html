@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Beukers Bakery</h1>
+			<h2>Jennifer Beukers</h2>
+			<h2>WDD 131.A2</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>The purpose of this website is to advertise homemade bakery products and allow local customers to browse breads, search products, and add items to a cart 
+                for purchase. The website will help customers easily see available products, prices, and descriptions before placing orders for local pickup. 
+            </p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>The audience for this particular website would be people located in Cache Valley Utah specifically who are interested in purchasing locally made goods rather
+                than purchasing store-bought breads. </p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>I will create a products array in JavaScript, then render them with a template function just like we used for the recipe website. 
+                I will also implement a search function in JavaScript.
+                I will create buttons to filter the types of bread. Examples could include: sourdough, whole wheat, sweet, gluten-free, seasonal.
+                Like the recipe website, I will also create a sort function. This will sort the products by price from low to high. 
+                Then JavaScript will be used for the shopping cart. When items are added, it will store them in an array.
+                Depending on time, I could also show a random or featured bread at the top of the website using the random method we implemented in the recipe website.  </p>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="images/favicon-32x32.png" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<!-- ------------------------Steps 4-8------------------------------ -->
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/3e92cc-2a628f-13293d-eff5fb-663300"
+				target="_blank"
+				>https://coolors.co/3e92cc-2a628f-13293d-eff5fb-663300</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#2A628F]</td>
+						<td class="secondary">[#13293D]</td>
+						<td class="accent1">[#EFF5FB]</td>
+						<td class="accent2">[#663300]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- ------------------------Step 9------------------------------ -->
+
+			<h3>Typography</h3>
+			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+			<h4>
+				Heading Font: Cormorant
+				<!-- change this -->
+			</h4>
+			<h4>
+				Paragraph Font: Libre bakersville
+				<!-- change this -->
+			</h4>
+			<h3>Normal paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<h3>Colored paragraph example</h3>
+			<p class="colored">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+			</p>
+
+			<!-- ------------------------Step 10------------------------------ -->
+
+			<h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="beukers_bakery.html">Home</a>
+				<a href="products.html">Page2</a>
+				<a href="shopping_cart.html">Page3</a>
+			</nav>
+			<hr />
+
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<p>
+                The home page will introduce Beukers Bakery and highlight the fresh breads
+                available for purchase. At the top of the page there will be a featured bread
+                or daily special displayed using JavaScript. Below this will be a short
+                introduction to the bakery and a selection of featured products. Each product
+                will include an image, bread name, description, and price. Customers will be
+                able to search for breads using a search bar and filter breads by category
+                such as sourdough, whole wheat, sweet breads, or seasonal items.
+            </p>
+
+            <p>
+                Images will include photos of the bakery breads such as sourdough loaves,
+                honey wheat bread, cinnamon rolls, and sandwich bread. These images will help
+                customers see the quality and style of the baked goods.
+            </p>
+			<h3>Products</h3>
+			<p> The products page will show all available breads in a grid layout. Each
+                product card will include a bread image, name, description, and price.
+                Customers will be able to search for breads using a search bar and filter
+                them by category. JavaScript will also display breads by price
+                from lowest to highest. Each product will have an "Add to Cart" button that
+                stores the selected item in the shopping cart array.
+            </p>
+
+            <p>
+                Images on this page will include different types of bread such as sourdough,
+                whole wheat loaves, sweet breads, and seasonal baked goods.
+            </p>
+
+            <h3>Shopping Cart</h3>
+            <p>
+                The shopping cart page will display the items the customer has selected.
+                JavaScript will store items in a cart array when the user clicks the
+                "Add to Cart" button. The page will display the selected breads, quantities,
+                and total cost. Customers will be able to remove items or adjust quantities
+                before placing their order. This page will simulate the checkout process
+                for local pickup orders.
+            </p>
+            
+			<h2>Wireframes</h2>
+			<p>
+				Create two wireframes for your site. One for each page and list them
+				here
+			</p>
+
+			<h3>Home</h3>
+			<p>
+				The home page will be stacked as a single column for the mobile design. 
+                Then the desktop site will be in two columns as shown in the wireframe. 
+			</p>
+			<img src="images/home.JPG" alt="home page wireframe" />
+
+			<h3>Products</h3>
+			<p>
+                Like the home page, the products page will also be stacked as a single column
+                for the mobile layout. The desktop layout will have two columns. 
+			</p>
+			<img src="images/products.JPG" alt="page 2 wireframe" />
+
+            <h3>Shopping Cart</h3>
+            <p>
+
+            </p>
+            <img src="images/shopping_cart.JPG" alt="page 2 wireframe" />
+		</main>
+	</body>
+</html>
