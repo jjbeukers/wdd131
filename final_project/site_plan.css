@@ -102,8 +102,8 @@ p {
   background-color: #663300;
 }
 
-p.colored {
-  background-color: #EFF5FB;
+.colored {
+  background-color: #2A628F;
   color: var(--paragraph-color-on-color);
 }
 
