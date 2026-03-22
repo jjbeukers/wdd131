@@ -179,3 +179,15 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.image_gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px; /* space between images */
+}
+
+.image_gallery img {
+  width: 100%;   /* makes images fill their grid cell */
+  height: auto;  /* keeps proportions */
+  display: block;
+}
