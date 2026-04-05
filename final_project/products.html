@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="online webiste to purchase bakery products">
+    <meta name="author" content="Jen Beukers">
+    <title>Beukers Bakery</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&display=swap" rel="stylesheet">
+    <link href="beukers_bakery.css" rel="stylesheet">
+    <script defer src="beukers_bakery.js"></script>
+
+    
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Beukers Bakery">
+    <meta property="og:description" content="Online store for Beukers Bakery">
+    <meta property="og:url" content="https://jjbeukers.github.io/wdd131/final_project/beukers_bakery.html">
+    <meta property="og:image" content="https://jjbeukers.github.io/wdd131/final_project/images/main_page_image.jpg">
+
+    <!-- X Card -->
+    <meta name="twitter:card" content="Social Preview Image">
+    <meta name="twitter:title" content="Beukers Bakery">
+    <meta name="twitter:description" content="Online store for Beukers Bakery">
+    <meta name="twitter:image" content="https://jjbeukers.github.io/wdd131/final_project/beukers_bakery.html">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+                
+</head>
+
+<body> 
+
+        <!-- HEADER -->
+    <header class="main-header">
+        <div class="container header-content">
+
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-text">
+                    <h1>Beukers <br> Bakery</h1>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="beukers_bakery.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right Side -->
+            <div class="header-right">
+                <a href="#" class="order-btn">ORDER ONLINE</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="images/wide_wheat.jpg" alt="wheat field">
+    </section>
+
+    <main class="main-content">
+
+         <div class = "search_bar">
+                <input id = "search" type = "text" placeholder = "Find a Product">
+                <button id="search_btn" class="search_btn">
+                    <img src="images/search.svg" alt="Search">
+                </button>
+            </div>
+
+            <div id="search-results"></div>
+
+            <hr> <!--gray line between the search bar and recipe card -->
+
+        
+            <h2 class="page_title">Our Products</h2>
+
+            <div id="product-list" class="product-grid"></div>
+
+
+    </main>
+    
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- LEFT (empty spacer for balance) -->
+        <div class="footer-left"></div>
+
+        <!-- CENTER (social icons) -->
+        <div class="footer-center">
+            <a href="#"><img src="images/instagram_icon.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="YouTube"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest"></a>
+        </div>
+
+        <!-- RIGHT (bakery info) -->
+        <div class="footer-right">
+            <p><strong>Phone:</strong> (435) 313-3050</p>
+            <p><strong>Address:</strong> 1765 N 8150 W<br>Mendon, UT 84325</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
