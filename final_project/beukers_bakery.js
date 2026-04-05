@@ -133,20 +133,24 @@ function renderProducts() {
 /* display the products on the screen */
 renderProducts();
 
-// Array of hero images
-const heroImages = [
-  "images/main_page_image.jpg",
-  "images/wide_wheat.jpg",
-  "images/single_wheat_stock.jpg"
-];
+document.addEventListener("DOMContentLoaded", function (){
 
-const heroImg = document.getElementById("hero_image");
+    const heroImages = [
+        "images/main_page_image.jpg",
+        "images/wide_wheat.jpg",
+        "images/single_wheat_stock.jpg"
+    ];
 
-if (heroImg) {
-  const randomIndex = Math.floor(Math.random() * heroImages.length);
-  console.log("Random image:", randomIndex);
-  heroImg.src = heroImages[randomIndex];
-}
+    const heroImg = document.getElementById("hero_image");
+
+    if (heroImg) {
+    const randomIndex = Math.floor(Math.random() * heroImages.length);
+    console.log("Random image:", randomIndex);
+    heroImg.src = heroImages[randomIndex];
+    }
+});
+
+renderProducts();
 
 // ===== SEARCH FUNCTIONALITY =====
 
